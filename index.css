@@ -1,0 +1,179 @@
+/* This is the style for the header */
+.headerClass {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 4px #6F00FF;
+}
+
+/* Reset margin and padding for all elements to avoid unexpected layout issues */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Include padding and borders in the element's total width and height */
+}
+
+/* Apply a common style to all figures */
+figure {
+    position: absolute;
+     text-align: center;
+     width: 20%;
+     padding: 10px;
+    /* Add padding inside the figures */
+}
+.figcaption2 {
+    margin-right: 5px;
+    /* Space between the header and the image */
+    color: #FFFFFF;
+    text-shadow: 2px 2px 4px #6F00FF;
+    /* Background color to prevent overlapping */
+    display: block;
+}
+
+/* Style the figcaption */
+figcaption {
+    margin-bottom: 5px;
+    /* Space between the header and the image */
+    color: #FFFFFF;
+    text-shadow: 2px 2px 4px #6F00FF;
+    /* Background color to prevent overlapping */
+    display: block;
+}
+
+/* Style the images */
+img {
+    display: block;
+    /* Display block to fit the width of the figure */
+    max-width: 100%;
+    /* Limit image width to 100% of the figure */
+    height: auto;
+    /* Maintain aspect ratio */
+    margin: 0 auto 5px;
+    /* Center the image and add space below */
+}
+
+#img2 {
+    display: block;
+    /* Display block to fit the width of the figure */
+    max-width: 100%;
+    /* Limit image width to 100% of the figure */
+    height: 300px;
+    /* Maintain aspect ratio */
+    margin: 0 auto 5px;
+    /* Center the image and add space below */
+}
+
+/* Style the textarea */
+textarea {
+    display: block;
+    width: 100%;
+    height: 130px;
+    color: #FFFFFF;
+    background-color: transparent;
+    font-style: bold;
+    /* Textarea will fill the width of the figure */
+    margin: 5px 0;
+    /* Add space above and below the textarea */
+    padding: 10px;
+    font-size: 12px;
+    /* Padding inside the textarea */
+}
+
+/* Position each figure in the specified locations */
+#figure1,
+#figure2,
+#figure3,
+#figure4,
+#figure5 {
+    width: 20vw;
+}
+
+#figure1 {
+    top: 5vh;
+    left: 1vw;
+}
+
+#figure2 {
+    top: 5vh;
+    left: 20vw;
+}
+
+#figure3 {
+     top: 5vh;
+     right: 20vw;
+}
+
+#figure4 {
+    top: 5vh;
+    right: 1vw;
+}
+
+#figure5 {
+    top: 10vh;
+    left: 50vw;
+    transform: translateX(-50%);
+}
+/* Adding some padding to the body so images don't stick to the edges */
+body {
+    padding: 20px;
+    /* Adjust the padding as necessary */
+    overflow: auto;
+    background: #000000;
+    font-family: 'Times New Roman', Times, serif;
+     /* Show scrollbar if the content overflows */
+}
+.workCited,
+.workCitedH,
+.workCited2,
+.workCited3,
+.workCited4,
+.workCited5 {
+    /* Start 10px from bottom and stack upwards */
+    color: #FFFFFF;
+    font-size: 10px;
+    width: 100%;
+    text-align: center;
+    text-shadow: 2px 2px 4px #6F00FF;
+    bottom: 1vh;
+    left: 1vw;
+ }
+
+#p1 {
+    width: 100%;
+    height: 300px;
+}
+
+.picCaption {
+    padding: 10px;
+    max-width: 100%;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 16px;
+ }
+ 
+ 
+ @media (max-width: 768px) {
+     figure {
+         flex: 1 1 50%;
+         /* On smaller screens, make each figure take half the width */
+     }
+
+     .figcaption,
+     .picCaption {
+         font-size: 14px;
+         /* Smaller font size on smaller screens */
+     }
+ }
+
+ @media (max-width: 480px) {
+     figure {
+         flex: 1 1 100%;
+         /* On very small screens, each figure takes full width */
+     }
+
+     .figcaption,
+     .picCaption {
+         font-size: 12px;
+     }
+ }
